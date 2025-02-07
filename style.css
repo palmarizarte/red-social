@@ -141,7 +141,7 @@ header {
     display: flex;
     align-items: center;
     border-radius: 999px;
-    background-color: #DFDEDE;
+    background-color: #DFDEDE; /* Este color no cambiará */
     cursor: pointer;
     transition: background-color 0.5s ease;
     margin-left: 1rem;
@@ -198,10 +198,6 @@ body.active .right img {
     filter: brightness(0) invert(1);
 }
 
-body.active .dark-mode {
-    background-color: white;
-}
-
 body.active .circle {
     transform: translateX(100%);
     background-color: #2A2A2C;
@@ -213,4 +209,72 @@ body.active .circle .moon {
 
 body.active .circle .sun {
     transform: translateY(120%);
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        padding: 0.45rem 1rem; /* Reducir el padding en móviles */
+    }
+
+    .right {
+        gap: 0.8rem; /* Reducir el espacio entre íconos en móviles */
+    }
+
+    .right a {
+        width: 36px; /* Reducir el tamaño del fondo redondo en móviles */
+        height: 36px;
+    }
+
+    .right img {
+        width: 1.2rem; /* Reducir el tamaño de los íconos en móviles */
+        margin: 0.4rem;
+    }
+
+    .dark-mode {
+        width: 50px; /* Reducir el tamaño del botón de modo oscuro en móviles */
+        height: 26px;
+        margin-left: 0.5rem;
+    }
+
+    .dark-mode .circle {
+        width: 20px; /* Reducir el tamaño del círculo en móviles */
+        height: 20px;
+    }
+
+    .brand .name {
+        font-size: 1.2rem; /* Reducir el tamaño del nombre en móviles */
+    }
+}
+
+/* Íconos de la barra de navegación */
+.right a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Fondo redondo */
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+    width: 40px; /* Tamaño fijo para el fondo redondo */
+    height: 40px; /* Tamaño fijo para el fondo redondo */
+}
+.right img {
+    width: 1.5rem;
+    margin: 0.5rem;
+    filter: brightness(0) invert(var(--icon-color));
+    transition: filter 0.3s;
+}
+
+/* Modo oscuro: fondo redondo solo al pasar el mouse */
+body.active .right a {
+    background-color: transparent; /* Fondo transparente por defecto */
+}
+
+body.active .right a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente iluminado al pasar el mouse */
+}
+
+
+body.active .right img {
+    filter: none; /* Eliminamos el filtro para mantener el color normal */
 }
