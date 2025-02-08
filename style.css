@@ -245,6 +245,7 @@ body.active .circle .sun {
     .brand .name {
         font-size: 1.2rem; /* Reducir el tamaño del nombre en móviles */
     }
+    
 }
 
 /* Íconos de la barra de navegación */
@@ -278,3 +279,53 @@ body.active .right a:hover {
 body.active .right img {
     filter: none; /* Eliminamos el filtro para mantener el color normal */
 }
+
+/* Estilos para la lista de cuentos */
+.cuentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.cuento-box {
+    background-color: var(--background-selected);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--icon-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cuento-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Modo oscuro para las cajas de cuentos */
+body.active .cuento-box {
+    background-color: var(--background-selected);
+    border-color: var(--border-color);
+    color: var(--icon-color);
+}
+
+/* Centrar el contenido y hacerlo responsivo */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .cuentos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+    
