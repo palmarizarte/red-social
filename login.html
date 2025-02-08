@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión y Registro</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formulario">
+        <!-- Formulario de inicio de sesión -->
+        <div id="loginForm">
+            <h1>Inicio de sesión</h1>
+            <form id="loginFormSubmit">
+                <div class="username">
+                    <input type="text" required>
+                    <label>Nombre de usuario</label>
+                </div>
+                <div class="contraseña">
+                    <input type="password" required>
+                    <label>Contraseña</label>
+                </div>
+                <div class="recordar">¿Olvidó su contraseña?</div>
+                <input type="submit" value="Iniciar">
+                <div class="registrarse">
+                    Quiero hacer el <a href="#" id="toggleRegistro">registro</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Formulario de registro -->
+        <div id="registroForm" style="display: none;">
+            <h1>Registro</h1>
+            <form id="registroFormSubmit">
+                <div class="username">
+                    <input type="text" required>
+                    <label>Nombre de usuario</label>
+                </div>
+                <div class="username">
+                    <input type="text" required>
+                    <label>Email o número de teléfono</label>
+                </div>
+                <div class="contraseña">
+                    <input type="password" required>
+                    <label>Contraseña</label>
+                </div>
+                <input type="submit" value="Registrarse">
+                <div class="iniciar-sesion">
+                    ¿Ya tienes una cuenta? <a href="#" id="toggleLogin">Iniciar sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
