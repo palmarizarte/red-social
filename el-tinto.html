@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El tinto</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: var(--background-color);
+            color: var(--icon-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Contenedor principal con márgenes estilo APA */
+        .contenido-cuento {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2.54cm; /* 1 pulgada en cm */
+            background-color: var(--background-color);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Título del cuento */
+        h1 {
+            text-align: center;
+            color: var(--text-tittle-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        /* Autor del cuento */
+        .autor {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 30px;
+            color: var(--icon-menu-color);
+        }
+
+        /* Contenido del cuento */
+        .texto-cuento {
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+
+        /* Botones de navegación */
+        .botones-navegacion {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        /*Centrar texto*/
+        .CentrarTexto {
+            text-align: center;
+        }
+
+        .boton {
+            background-color: var(--text-tittle-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton:hover {
+            background-color: var(--text-selected-color);
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .contenido-cuento {
+                padding: 1.5cm;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .botones-navegacion {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .boton {
+                width: 100%;
+            }
+        }
+
+        /* Ajustes para el modo oscuro */
+        body.active .contenido-cuento {
+            color: #000000; /* Texto negro en modo oscuro */
+        }
+
+        body.active .autor {
+            color: #000000; /* Texto negro en modo oscuro */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenido-cuento">
+        <h1>El tinto</h1>
+        <p class="autor">Autora: Sharelly Fruto Charris</p>
+        <hr>
+        <div class="texto-cuento">
+
+            <p>&nbsp;</p>
+
+                <table>
+                <tbody>
+                <tr>
+                <td> 
+                </td>
+                </tr>
+                </tbody>
+                </table>
+
+            <p>Esta casa tendrá miel, no me refiero a la de abejas, sino a de la gente que llega y se amaña. Hace más de dos décadas existe una tradición en casa: todos los días mi papá, José Santos Fruto Molina, más conocido como «El Chichí», se despierta, le agradece a Dios, y le hace el desayuno a su querida esposa, Fabiola, para que vaya con la mejor energía a trabajar. Luego hace una bebida peculiar todas las mañanas.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; La bebida es puesta en la estufa desde muy temprano. La hace para brindársela a todos los que llegan a visitarlo en la puerta de su casa. Dicho aperitivo tiene un sabor diferente; es apetecido por la gente, y muchos de los que llegan después de hacer ejercicio o alguna rutina de cardio, se sientan y no piden agua; piden el manjar que tiene Chichí en casa. No es whisky ni ron, mucho menos aguardiente; tampoco contiene cannabis, pero es adictiva, la indolente. No quiero dar muchas vueltas a esta bebida excelente, más conocida como café, pero en la costa le dieron renombre como «el tinto».</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; En la puerta de mi casa nunca falta un chiste, un cuento, una risa y saboteo. La asamblea comienza a las cinco y media de la mañana, y para rematar la entrada es el tinto de la casa. ¿Cuándo empezaron las sentadas en la madrugada? Jumm, no recuerdo exactamente, solo sé que tienen fama.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; Sale Julio, el policía; Javier, el sapito, ese no falla; Jairo, Eduardito, Cesar y el Chile, que van por su tinto todas las mañanas. Iralis siempre llega; Pacheco y Nulfo tampoco pelan. Vea, ¡qué tertulia la que ellos llevan!, de domingo a domingo la costumbre es bella.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; Son muchos los que asisten a dicha asamblea, y no quiero nombrarlos a todos pa' evitar problemas. Lo que no me queda en duda es que el tinto es la excusa para el gran encuentro; todos los días llegan para actualizar algún evento. Llueva, truene o relampaguee, no es cuestión de clima; muchos asisten con sombrilla. No sé qué tendrá ese tinto, pero todos vienen por su poquito.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; Lo que aquí estoy contando no es paja. Vea, aunque dormida me encuentre, no respetan el descanso. Pasa el de las frutas, con un parlante: no ha llegado y va gritando «¡Chichíiiiiiiii!» ¡Cipote alarma la que me gasto! A veces dan ganas de insultarlo, pero mejor me río antes de irme en llanto.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; Luego llega el de las gallinas, el del queso y Tomasita Vea, palmarino que se respete conoce los famosos bollos de yuca de Tomasa. También extrañamos la gran visita de Herrera, el bigote; fue un gran amigo de la casa.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; Luego llega el de las gallinas, el del queso y Tomasita Vea, palmarino que se respete conoce los famosos bollos de yuca de Tomasa. También extrañamos la gran visita de Herrera, el bigote; fue un gran amigo de la casa.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; Muchas veces me quejaba de tanta visita y decía en voz alta: «No puedo andar en tanga en mi propia casa». Y es que desde que despertaba, hasta en las noches que me dormía, siempre había una visita. Sin embargo, la vida nos da lecciones que nos enseñan a darle el valor a las pequeñas cosas; no me refiero a cosas materiales, ni palpables, esto va más allá de un simple tinto.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; Mi queja terminó el día que mi papá infartó. Todo se desvaneció, muchos planes familiares se vinieron abajo. Nunca había sentido la muerte en mi familia tan cerca, el silencio me delataba. Mi forma de sobrellevar la tristeza era dedicarme a mi trabajo; no soportaba ver a mi papá entre cuatro paredes en un hospital. El barrio triste había quedado; eso sí, las visitas no se acabaron. Casi un mes hospitalizado, lejos de su gorda, sus hijos, vecinos, amigos y hermanos, y a pesar de eso, él preguntaba: «¿Y ahora el tinto?»— Jumm… No hay quien lo haga—, respondía mi hermana.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; Pasaron los días y aumentaba la angustia. Católicos, evangélicos, adventistas, mormones, hasta los incrédulos, todos rezaron por mi viejo. Una tropa quedó pequeña. ¡Vaya situación tan cruel y afanada! No veíamos la hora de que volviera a su lugar seguro, a su hogar, a su casa.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; Él, estando allá encerrado, pensaba en todos los que afuera estaban. Fabiola, mi madre lo motivaba. Él sintió mucho miedo, se le notaba; no estaba preparado para lo que le esperaba. Creía que poco a poco su vida se le acababa, el miedo a la muerte era inevitable, pero esta vez no fue, no le tocaba. El redentor escuchó las súplicas del pueblo, el mismo pueblo que lo adoptó cuando él era pequeño. Un pueblo arrollador, de gente pujante y valiente, un pueblo orgulloso de sus raíces, un pueblo lleno de cultura y tradición. San Juan Bautista Precursor es el patrono; con la guayaba y la yuca se hacen festivales. Un pueblo lleno de templanza, armonía, esperanza, fe y personas talentosas. Sí, hablo de Palmar de Varela. Allí todos lo esperaban con los brazos abiertos, felices y contentos al ver que de ese calvario salió mi viejo.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; Aunque con grandes cicatrices, pero eso no importó; lo más relevante fue que Chichí volvió y agradecido con Dios, con lágrimas en los ojos nos recordó:</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; — ¡El tinto se enfrió, pero no se acabó!</p>
+
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
+
+        <!-- Botones de navegación -->
+        <div class="botones-navegacion">
+            <button class="boton" onclick="window.location.href='concurso-2024.html'">Volver al listado</button>
+            <button class="boton" onclick="window.location.href='historias-de-mi-pueblo.html'">Siguiente cuento</button>
+        </div>
+    </div>
+
+    <!-- Script para el dark mode -->
+    <script>
+        const darkMode = document.querySelector(".dark-mode");
+        const body = document.body;
+
+        const savedDarkMode = localStorage.getItem("dark-mode") === "true";
+
+        if (savedDarkMode) {
+            body.classList.add("active");
+            darkMode.classList.add("no-transition");
+        } else {
+            darkMode.classList.add("no-transition");
+        }
+
+        darkMode.addEventListener("click", () => {
+            body.classList.toggle("active");
+            const isDarkMode = body.classList.contains("active");
+            localStorage.setItem("dark-mode", isDarkMode);
+            darkMode.classList.add("no-transition");
+        });
+
+        window.addEventListener("load", () => {
+            darkMode.classList.add("no-transition");
+            setTimeout(() => {
+                darkMode.classList.remove("no-transition");
+            }, 0);
+        });
+    </script>
+</body>
+</html>

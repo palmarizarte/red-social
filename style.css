@@ -280,7 +280,7 @@ body.active .right img {
     filter: none; /* Eliminamos el filtro para mantener el color normal */
 }
 
-/* Estilos para la lista de cuentos */
+/* Estilos para los cuentos */
 .cuentos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -289,43 +289,120 @@ body.active .right img {
 }
 
 .cuento-box {
-    background-color: var(--background-selected);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
+    background-color: var(--Background-hover);
     padding: 1rem;
+    border-radius: 8px;
     text-align: center;
-    text-decoration: none;
     color: var(--icon-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .cuento-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: var(--background-selected);
 }
 
-/* Modo oscuro para las cajas de cuentos */
-body.active .cuento-box {
+/* Botón para ver cuentos */
+.btn-ver-cuentos {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--text-tittle-color);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ver-cuentos:hover {
+    background-color: var(--text-selected-color);
+}
+
+/* Modo oscuro para los cuentos */
+body.dark-mode .cuento-box {
     background-color: var(--background-selected);
-    border-color: var(--border-color);
     color: var(--icon-color);
 }
 
-/* Centrar el contenido y hacerlo responsivo */
-main {
+body.dark-mode .cuento-box:hover {
+    background-color: var(--Background-hover);
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Nunito Sans', serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--icon-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.concurso-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-@media (max-width: 768px) {
-    .cuentos-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-
-    main {
-        padding: 1rem;
-    }
+/* Secciones */
+.seccion-concurso, .seccion-bases, .seccion-cuentos {
+    margin-bottom: 3rem;
 }
-    
+
+h1, h2 {
+    color: var(--text-tittle-color);
+    margin-bottom: 1.5rem;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Lista de cuentos */
+.lista-cuentos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cuento-box {
+    background-color: var(--Background-hover);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--icon-color);
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cuento-box:hover {
+    transform: translateY(-5px);
+    background-color: var(--background-selected);
+}
+
+/* Botón para ver cuentos */
+.btn-ver-cuentos {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--text-tittle-color);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.btn-ver-cuentos:hover {
+    background-color: var(--text-selected-color);
+}
+
+/* Modo oscuro */
+body.dark-mode .cuento-box {
+    background-color: var(--background-selected);
+    color: var(--icon-color);
+}
+
+body.dark-mode .cuento-box:hover {
+    background-color: var(--Background-hover);
+}

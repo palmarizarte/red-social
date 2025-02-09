@@ -1,31 +1,51 @@
 const loginForm = document.getElementById('loginForm');
 const registroForm = document.getElementById('registroForm');
+const olvidoForm = document.getElementById('olvidoForm');
 const toggleRegistro = document.getElementById('toggleRegistro');
 const toggleLogin = document.getElementById('toggleLogin');
-const loginFormSubmit = document.getElementById('loginFormSubmit');
-const registroFormSubmit = document.getElementById('registroFormSubmit');
+const toggleOlvido = document.getElementById('toggleOlvido');
+const toggleLoginOlvido = document.getElementById('toggleLoginOlvido');
 
-// Alternar entre formularios
 toggleRegistro.addEventListener('click', (e) => {
     e.preventDefault();
     loginForm.style.display = 'none';
     registroForm.style.display = 'block';
+    olvidoForm.style.display = 'none';
 });
 
 toggleLogin.addEventListener('click', (e) => {
     e.preventDefault();
     registroForm.style.display = 'none';
     loginForm.style.display = 'block';
+    olvidoForm.style.display = 'none';
 });
 
-// Redirección al inicio (home) después de enviar el formulario de inicio de sesión
-loginFormSubmit.addEventListener('submit', (e) => {
-    e.preventDefault(); // Evita que el formulario se envíe de forma tradicional
-    window.location.href = 'index.html'; // Redirige al inicio (home)
+toggleOlvido.addEventListener('click', (e) => {
+    e.preventDefault();
+    loginForm.style.display = 'none';
+    registroForm.style.display = 'none';
+    olvidoForm.style.display = 'block';
 });
 
-// Redirección al inicio (home) después de enviar el formulario de registro
-registroFormSubmit.addEventListener('submit', (e) => {
-    e.preventDefault(); // Evita que el formulario se envíe de forma tradicional
-    window.location.href = 'index.html'; // Redirige al inicio (home)
+toggleLoginOlvido.addEventListener('click', (e) => {
+    e.preventDefault();
+    olvidoForm.style.display = 'none';
+    loginForm.style.display = 'block';
+});
+
+document.getElementById('login').addEventListener('submit', (e) => {
+    e.preventDefault();
+    window.location.href = 'index.html';
+});
+
+document.getElementById('registro').addEventListener('submit', (e) => {
+    e.preventDefault();
+    registroForm.style.display = 'none'; // Oculta el formulario de registro
+    loginForm.style.display = 'block';   // Muestra el formulario de inicio de sesión
+});
+
+document.getElementById('olvido').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Se ha enviado un enlace para restablecer tu contraseña.');
+    window.location.href = 'index.html';
 });

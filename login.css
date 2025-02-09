@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
     font-family: 'Nunito Sans', serif;
     margin: 0;
@@ -8,15 +7,16 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    align-items: flex-start; /* Ahora el formulario estará más arriba */
+    height: 100vh;
+    padding-top: 50px; /* Añadimos un espacio superior */
 }
 
 .formulario {
     width: 400px;
     background: var(--background-color);
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /*Sombra de la caja de formulario inicio de sesión*/
     padding: 20px;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -33,7 +33,7 @@ body {
     box-sizing: border-box;
 }
 
-form .username, form .contraseña {
+.username, .contraseña {
     position: relative;
     border-bottom: 2px solid var(--border-color);
     margin: 30px 0;
@@ -112,32 +112,4 @@ input[type="submit"]:hover {
 
 .registrarse a:hover, .iniciar-sesion a:hover {
     text-decoration: underline;
-}
-
-/* Modo oscuro */
-body.dark-mode .formulario {
-    background-color: var(--background-color);
-    color: var(--icon-color);
-}
-
-body.dark-mode .formulario h1 {
-    color: var(--text-tittle-color);
-}
-
-body.dark-mode .username input, 
-body.dark-mode .contraseña input {
-    color: var(--icon-color);
-}
-
-body.dark-mode .username label, 
-body.dark-mode .contraseña label {
-    color: var(--icon-menu-color);
-}
-
-body.dark-mode input[type="submit"] {
-    background-color: var(--text-tittle-color);
-}
-
-body.dark-mode input[type="submit"]:hover {
-    background-color: var(--text-selected-color);
 }

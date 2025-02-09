@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión y Registro</title>
     <link rel="icon" href="logo.png">
-    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="formulario">
-        <!-- Formulario de inicio de sesión -->
         <div id="loginForm">
             <h1>Inicio de sesión</h1>
-            <form id="loginFormSubmit">
+            <form id="login">
                 <div class="username">
                     <input type="text" required>
                     <label>Nombre de usuario</label>
@@ -22,7 +21,9 @@
                     <input type="password" required>
                     <label>Contraseña</label>
                 </div>
-                <div class="recordar">¿Olvidó su contraseña?</div>
+                <div class="recordar">
+                    <a href="#" id="toggleOlvido">¿Olvidó su contraseña?</a>
+                </div>
                 <input type="submit" value="Iniciar">
                 <div class="registrarse">
                     Quiero hacer el <a href="#" id="toggleRegistro">registro</a>
@@ -30,10 +31,9 @@
             </form>
         </div>
 
-        <!-- Formulario de registro -->
         <div id="registroForm" style="display: none;">
             <h1>Registro</h1>
-            <form id="registroFormSubmit">
+            <form id="registro">
                 <div class="username">
                     <input type="text" required>
                     <label>Nombre de usuario</label>
@@ -52,8 +52,25 @@
                 </div>
             </form>
         </div>
+
+        <div id="olvidoForm" style="display: none;">
+            <h1>Restablecer contraseña</h1>
+            <form id="olvido">
+                <div class="username">
+                    <input type="text" required>
+                    <label>Email o número de teléfono</label>
+                </div>
+                <input type="submit" value="Enviar">
+                <div class="iniciar-sesion">
+                    <a href="#" id="toggleLoginOlvido">Volver a inicio de sesión</a>
+                </div>
+            </form>
+        </div>
     </div>
 
+    
+
     <script src="login.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
