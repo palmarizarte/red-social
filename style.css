@@ -338,6 +338,9 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+main.concurso-container {
+    margin-top: 80px; /* Ajusta este valor según la altura del header */
+}
 .concurso-container {
     max-width: 1200px;
     margin: 0 auto;
