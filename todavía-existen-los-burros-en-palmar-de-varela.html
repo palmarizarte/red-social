@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmarizarte</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: var(--background-color);
+            color: var(--icon-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Contenedor principal con márgenes estilo APA */
+        .contenido-cuento {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2.54cm; /* 1 pulgada en cm */
+            background-color: var(--background-color);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Título del cuento */
+        h1 {
+            text-align: center;
+            color: var(--text-tittle-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        /* Autor del cuento */
+        .autor {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 30px;
+            color: var(--icon-menu-color);
+        }
+
+        /* Contenido del cuento */
+        .texto-cuento {
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+
+        /* Botones de navegación */
+        .botones-navegacion {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        /*Centrar texto*/
+        .CentrarTexto {
+            text-align: center;
+        }
+
+        .boton {
+            background-color: var(--text-tittle-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton:hover {
+            background-color: var(--text-selected-color);
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .contenido-cuento {
+                padding: 1.5cm;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .botones-navegacion {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .boton {
+                width: 100%;
+            }
+        }
+
+        /* Ajustes para el modo oscuro */
+        body.active .contenido-cuento {
+            color: #000000; /* Texto negro en modo oscuro */
+        }
+
+        body.active .autor {
+            color: #000000; /* Texto negro en modo oscuro */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenido-cuento">
+        <h1>Todavía existen los burros en Palmar de Varela</h1>
+        <p class="autor">Cuento colectivo</p>
+        
+        <div class="texto-cuento">
+
+            <p>&nbsp;</p>
+
+
+            <p></p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
+
+        <!-- Botones de navegación -->
+        <div class="botones-navegacion">
+            <button class="boton" onclick="window.location.href='concurso-2024.html'">Volver al listado</button>
+            <button class="boton" onclick="window.location.href='una-ruta-hacia-el-destino.html'">Siguiente cuento</button>
+        </div>
+    </div>
+
+    <!-- Script para el dark mode -->
+    <script>
+        const darkMode = document.querySelector(".dark-mode");
+        const body = document.body;
+
+        const savedDarkMode = localStorage.getItem("dark-mode") === "true";
+
+        if (savedDarkMode) {
+            body.classList.add("active");
+            darkMode.classList.add("no-transition");
+        } else {
+            darkMode.classList.add("no-transition");
+        }
+
+        darkMode.addEventListener("click", () => {
+            body.classList.toggle("active");
+            const isDarkMode = body.classList.contains("active");
+            localStorage.setItem("dark-mode", isDarkMode);
+            darkMode.classList.add("no-transition");
+        });
+
+        window.addEventListener("load", () => {
+            darkMode.classList.add("no-transition");
+            setTimeout(() => {
+                darkMode.classList.remove("no-transition");
+            }, 0);
+        });
+    </script>
+</body>
+</html>

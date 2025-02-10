@@ -369,8 +369,10 @@ p {
     gap: 1rem;
 }
 
+body
+
 .cuento-box {
-    background-color: var(--Background-hover);
+    background-color: #e2e2e2 ;
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
@@ -379,9 +381,10 @@ p {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+/*Animación de caja de cuentos*/
 .cuento-box:hover {
-    transform: translateY(-5px);
-    background-color: var(--background-selected);
+    transform: translateY(-5px); 
+    background-color: #ffa600;
 }
 
 /* Botón para ver cuentos */
@@ -412,7 +415,7 @@ body.dark-mode .cuento-box:hover {
 
 /* Footer */
 footer {
-    background-color: var(--background-selected);
+    background-color: #DFDEDE;
     padding: 1.5rem 1rem;
     text-align: center;
     border-top: 1px solid var(--border-color);
@@ -441,10 +444,11 @@ footer {
 .contact-info a {
     color: var(--text-selected-color);
     text-decoration: none;
+    transition: color  0.3s ease;
 }
 
 .contact-info a:hover {
-    text-decoration: underline;
+    color: #ffa600;
 }
 
 .social-media {
@@ -460,7 +464,7 @@ footer {
 }
 
 .social-media a:hover {
-    color: var(--text-selected-color);
+    color: #ffa600;
 }
 
 /* Responsividad para el footer */

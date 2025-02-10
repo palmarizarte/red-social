@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmarizarte</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: var(--background-color);
+            color: var(--icon-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Contenedor principal con márgenes estilo APA */
+        .contenido-cuento {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2.54cm; /* 1 pulgada en cm */
+            background-color: var(--background-color);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Título del cuento */
+        h1 {
+            text-align: center;
+            color: var(--text-tittle-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        /* Autor del cuento */
+        .autor {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 30px;
+            color: var(--icon-menu-color);
+        }
+
+        /* Contenido del cuento */
+        .texto-cuento {
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+
+        /* Botones de navegación */
+        .botones-navegacion {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        /*Centrar texto*/
+        .CentrarTexto {
+            text-align: center;
+        }
+
+        .boton {
+            background-color: var(--text-tittle-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton:hover {
+            background-color: var(--text-selected-color);
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .contenido-cuento {
+                padding: 1.5cm;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .botones-navegacion {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .boton {
+                width: 100%;
+            }
+        }
+
+        /* Ajustes para el modo oscuro */
+        body.active .contenido-cuento {
+            color: #000000; /* Texto negro en modo oscuro */
+        }
+
+        body.active .autor {
+            color: #000000; /* Texto negro en modo oscuro */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenido-cuento">
+        <h1>La historia de mi municipio resultó ser más interesante que mis trends de Tik Tok</h1>
+        <p class="autor">Autora: Valery Milagros Lora Méndez</p>
+        <hr>
+        <div class="texto-cuento">
+
+            <p>&nbsp;</p>
+
+            <p>Es medio día, sábado, no hay luz; por lo tanto, tampoco hay wi-fi, y Rosalba, que se ha quedado sin datos, no puede hacer sus TikToks. Aburrida y sin nada que hacer, se dirige al patio de su casa y, para su agradable sorpresa, ve que ha llegado su abuela paterna, la señora Isabel, quien siempre ha vivido en Palmar de Varela, tierra de la guayaba, pescadores y agricultores.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	Emocionados por la visita de la abuela, toman sus sillas y se hicieron debajo del palo de mango. Como es costumbre, la abuela de Rosalba y sus padres comenzaron a contar historias sobre el municipio, y Rosalba, curiosa y siempre interesada en conocer más sobre la historia de su municipio, se da cuenta de que nadie mejor que su abuela Isabel, para contársela.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	Interesada en la conversación entablada, Rosalba le pregunta a su abuela sobre el origen, la fundación y el nombre del municipio. La señora Isabel, le pide que se acomode bien y que disponga su tarde para escuchar una larga, pero entretenida historia.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—El nacimiento de Palmar ocurrió muchísimo tiempo antes de mi nacimiento —comienza a relatar la abuela Isabel—, pero mi padre, quien siempre fue un apasionado de la historia, me transfirió su conocimiento sobre la fundación de nuestro bello Palmar. Me contó que en nuestro municipio todo comenzó en el año 1762, cuando fue fundado por Catalino Varela. —La abuela Isabel hace una pausa y continúa— Algo por recalcar es que el lugar dónde se inició el caserío era rico en una especie de palma llamada palmiche, o palma real, a la que popularmente nosotros llamamos palmera; de ahí su nombre: Palmar, en honor a esas palmas y Varela por el nombre de su fundador.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—Abue, todo va muy bien pero en clases me hablaron del año del surgimiento del municipio y me dijeron que fue en 1857, ¿no estarás equivocada?</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—Para nada mijita. Es así tal cual te lo dijeron tus profes, pero es algo muy curioso y de mucho cuidado, en 1762 fue su fundación, pero comenzó a reconocerse como municipio y a ser poblado en el año que tus profesores te dijeron: 1857.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—¡Sígueme contando más Abue, esto está muy emocionante!</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—Nuestra geografía, hija, gracias a ella, nuestra economía florece. Nuestro Palmar se ubica sobre el delta del río Magdalena; es bueno que siempre tengas presente que estamos siendo bañados por uno de los ríos más caudalosos de nuestro país. Como te lo mencioné hace un momento, el paso del río Magdalena permite las actividades pesqueras y agrícolas.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—Es impresionante todo lo que compone nuestro municipio Abue, pero tu hablaste del «delta del río», ¿a qué hace referencia abuela?</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—Veo que prestas atención, hija; y justo estos días estuve investigando sobre el delta de un río. Esto, básicamente, es una de las diferentes formas que tiene el terreno de la tierra; pero, para pronunciarla de una manera más profesional, es un accidente geográfico, conformado por la desembocadura de un río y los sedimentos fluviales que ahí se depositan.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—Estoy admirada por todos tus conocimientos sobre la historia de nuestro municipio; compartiré con mis compañeros y profes tu sabiduría.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—Pero esto no es todo, hija. Mi infancia fue la más bonita; antes de que existieran los aparatos tecnológicos, mis amigos y yo valorábamos más la compañía. Nos gustaba participar en eventos, pero juntos, porque existía la hermandad, la unión y el respeto; por eso tú y tus hermanos están muy bien educados, porque el régimen de tus padres es muy chapado a la antigua, y eso hace que sean muy educados. Nuestros teléfonos eran unas tablitas con teclas pintadas; pagábamos con hojas de mango y nuestros chocoritos eran latitas de atún y embaces plásticos de gaseosa partidos a la mitad. Jugábamos a la cuchilla, al gran clásico «la ronda de los policías», a la cinta, al gusano, al escondido; y jugábamos a futbol, tanto hombres como mujeres en un mismo equipo.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—Abue, no tenía idea que todos esos juegos existían; pero te confieso que es porque últimamente estoy tan centrada en mis redes sociales y es como si me desconectara del mundo real. Como en todo municipio hay lugares emblemáticos —prosiguió Rosalba—, ¿en tus tiempos cuales eran los lugares más importantes del municipio?</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—Si hija, claro; hay un lugar llamado «la bonga», un árbol inmenso que está ubicado en la vía que conduce al limón; la Casa de la Cultura; el reconocidísimo parque de «La Dicha»; y ya el resto los conoces, puesto que a esos lugares vas cuando sales con tus amigas.</p>
+
+            <p>	Afortunadamente nuestro municipio cuenta con instituciones educativas de muy buena educación e infraestructura: está la I.E.T.E.C.I. San Francisco de Asís, donde estudias tú, que popularmente conocemos como «El Comercio», por su enfoque técnico; y el Agropecuario (I.E.T.A.), que tiene un enfoque más agrícola y pecuario.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	Allí, en el colegio donde estudias hay un proyecto que está dejando las mejores expectativas, porque un docente líder y un grupo de estudiantes quieren, y están, contribuyendo mitigar el cambio climático, que hoy nos está afectando; si no me equivoco su proyecto alertará a nosotros, como habitantes de Palmar de Varela, sobre el incremento y el equilibrio del rio Magdalena.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—Abue, sí, ellos se llaman Río Robot; implementan una metodología STEAM para mejorar la calidad de vida del municipio.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—Es increíble el talento y las ganas de superación que hay en este municipio. Y, por último, hija, nuestras tradiciones y la música que, por lo general, los palmarinos escuchamos, no todos son los trends de TikTok, jajaja. Los carnavales son la fiesta que más nos representa como caribeños; las fiestas patronales de San Juan Bautista; la popular fiesta de caballitos de palo; y el festival de danzas, por lo general escuchamos vallenatos, salsas y la música propia de nuestras raíces: el porro.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—Gracias, abue, por enseñarme tanto sobre nuestro municipio. Me entretuve tanto que ni me había dado cuenta que la luz había regresado. Ahora sé que investigar sobre mis raíces es muy importante; ya sé que no todo debe ser TikTok e Instagram.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;	—Es un placer siempre platicar contigo, mi querida; comparte con tus compañeros lo que aprendiste e indaga más con tus profesores. La transferencia de conocimiento es el mejor legado que pudieron dejar mis raíces.</p>
+
+            <p><em>	«No darnos cuenta del vasto universo que nos ha rodeado siempre, es una falta de respeta a toda la historia que construyeron para las futuras generaciones nuestros ancestros».</em></p>
+
+            
+            
+
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
+
+        <!-- Botones de navegación -->
+        <div class="botones-navegacion">
+            <button class="boton" onclick="window.location.href='concurso-2024.html'">Volver al listado</button>
+            <button class="boton" onclick="window.location.href='pacho-y-el-verdadero-sentido-de-la-vida.html'">Siguiente cuento</button>
+        </div>
+    </div>
+
+    <!-- Script para el dark mode -->
+    <script>
+        const darkMode = document.querySelector(".dark-mode");
+        const body = document.body;
+
+        const savedDarkMode = localStorage.getItem("dark-mode") === "true";
+
+        if (savedDarkMode) {
+            body.classList.add("active");
+            darkMode.classList.add("no-transition");
+        } else {
+            darkMode.classList.add("no-transition");
+        }
+
+        darkMode.addEventListener("click", () => {
+            body.classList.toggle("active");
+            const isDarkMode = body.classList.contains("active");
+            localStorage.setItem("dark-mode", isDarkMode);
+            darkMode.classList.add("no-transition");
+        });
+
+        window.addEventListener("load", () => {
+            darkMode.classList.add("no-transition");
+            setTimeout(() => {
+                darkMode.classList.remove("no-transition");
+            }, 0);
+        });
+    </script>
+</body>
+</html>
