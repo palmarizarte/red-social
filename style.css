@@ -176,12 +176,12 @@ header {
 }
 
 .dark-mode .circle .sun {
-    color: #FCDE5B;
+    color: #ffd000;
 }
 
 /* Modo oscuro */
 body.active {
-    background-color: #2C2C2E;
+    background-color: #2d2c2e;
     color: #f0f0f0;
 }
 
@@ -200,7 +200,7 @@ body.active .right img {
 
 body.active .circle {
     transform: translateX(100%);
-    background-color: #2A2A2C;
+    background-color: #2a2c2a;
 }
 
 body.active .circle .moon {
@@ -374,7 +374,7 @@ body
 .cuento-box {
     background-color: #e2e2e2 ;
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 25px;
     text-align: center;
     color: var(--icon-color);
     text-decoration: none;
